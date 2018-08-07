@@ -193,7 +193,7 @@ $ sudo pip install requests
       import sys
       import logging
       logging.basicConfig(stream=sys.stderr)
-      sys.path.insert(0, "/var/www/NoProfitApp/")
+      sys.path.insert(0, "/var/www/NoProfitApp/No-Profit-Catalog")
 
       from noProfit import app as application
 
