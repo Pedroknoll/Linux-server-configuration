@@ -190,12 +190,14 @@ $ sudo pip install requests
 
 - Paste the content:
 
+      #!/usr/bin/python
       import sys
       import logging
       logging.basicConfig(stream=sys.stderr)
-      sys.path.insert(0, "/var/www/NoProfitApp/No-Profit-Catalog")
+      sys.path.insert(0, "/var/www/NoProfitApp/")
 
-      from noProfit import app as application
+      from NoProfitApp import app as application
+      application.secret_key = 'super_secret_key'
 
 - Run the database setup
 
@@ -212,7 +214,7 @@ Add to the file the following code:
 
 ```sh
 <VirtualHost *:80>
-	ServerName no-profit-server
+	ServerName 18.222.184.111
 	ServerAdmin p.giacometo@gmail.com
 	WSGIScriptAlias / /var/www/NoProfitApp/noProfit.wsgi
 	<Directory /var/www/NoProfitApp/No-Profit-Catalog/>
