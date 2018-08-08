@@ -258,3 +258,10 @@ Disable the default apache site
 Restart Apache with the following command to apply the changes:
 
     sudo service apache2 restart
+
+
+### 6. Third-Part
+- [postgres on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
+- [flask deploying](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
+- [flask deploying on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+- [configure linux webservers](https://br.udacity.com/course/configuring-linux-web-servers--ud299)
