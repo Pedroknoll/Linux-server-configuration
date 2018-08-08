@@ -186,7 +186,7 @@ $ sudo pip3 install flask packaging oauth2client redis passlib flask-httpauth
 $ sudo pip3 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
 ```
 
-### 5.b Clone the udacity catalog project repository
+##### 5.b Clone the udacity catalog project repository
  - Create a NoProfitApp diretory:
 
         $ sudo mkdir /var/www/NoProfitApp
@@ -220,7 +220,7 @@ $ sudo pip3 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
       $ sudo python models.py
       $ sudo python populates_database.py
 
-### 5.d Configure and Enable a New Virtual Host
+##### 5.c Configure and Enable a New Virtual Host
 Create a noProfitApp.conf file
 
     sudo nano /etc/apache2/sites-available/noProfitApp.conf
@@ -259,6 +259,20 @@ Restart Apache with the following command to apply the changes:
 
     sudo service apache2 restart
 
+##### 5.d Secure git
+Create an .htaccess file in the .git directory:
+
+```
+cd /var/www/catalog/catalog/.git
+sudo nano .htaccess
+```
+
+Add the content to file
+
+```
+Order allow,deny
+Deny from all
+```
 
 ### 6. Third-Part
 - [postgres on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
