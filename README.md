@@ -1,10 +1,12 @@
 # Linux Server Configuration
- The Linux server configuration is the sixth project to Udacity Fullstack Nanodegree and take a baseline installation of a Linux server to host a web app securely.
+ The Linux server configuration is the sixth project to Udacity Fullstack
+ Nanodegree and take a baseline installation of a Linux server to host a web
+ app securely.
 
 ### Server Details
 - IP address: 18.222.184.111
 - Accessible SSH port: 2200
-- Application URL:
+- Application URL: http://18.222.184.111
 
 ## Configuration
 ### 1. Connect using your own SSH client
@@ -52,7 +54,8 @@ Istalling the public key on server
     $ touch .ssh/authorized_keys
     $ nano .ssh/authorized_keys
 
-Copy the public key saved in your local machine and paste to the `.ssh/authorized_keys`.
+Copy the public key saved in your local machine and paste to the
+`.ssh/authorized_keys`.
 
     $ chmod 700 .ssh
     $ chmod 644 .ssh/authorized_keys
@@ -65,7 +68,8 @@ Copy the public key saved in your local machine and paste to the `.ssh/authorize
     $ sudo apt-get update
     $ sudo apgt-get upgrade
 
-To allow automatic security updates, install and enable the `unattended-upgrades` package, if not installed:
+To allow automatic security updates, install and enable the
+`unattended-upgrades` package, if not installed:
 
     $ sudo apt-get install unattended-upgrades
     $ sudo dpkg-reconfigure --priority=low unattended-upgrades
@@ -81,9 +85,12 @@ Restart ssh service
 
     $ sudo service ssh restart
 
-Now you can use ssh to login with the `ssh grader@18.222.184.111 -p 2200 -i ~/.ssh/no_profit_key`
+Now you can use ssh to login with the
+`ssh grader@18.222.184.111 -p 2200 -i ~/.ssh/no_profit_key`
 
-##### 3.c Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for `SSH (port 2200)`, `HTTP (port 80)`, and `NTP (port 123)`.
+##### 3.c Configure the Uncomplicated Firewall (UFW)
+Only allow incoming connections for `SSH (port 2200)`, `HTTP (port 80)`,
+and `NTP (port 123)`.
 
 ```
 $ sudo ufw default deny incoming
