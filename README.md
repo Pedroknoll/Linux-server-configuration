@@ -8,6 +8,14 @@
 - Accessible SSH port: 2200
 - Application URL: http://18.222.184.111
 
+### Pre-requisites
+
+- Apache
+- PostgreSQL
+- Python
+- Flask
+
+
 ## Configuration
 ### 1. Connect using your own SSH client
 Go to Amazon Lighsail panel, click on `networking` and configure te firewall
