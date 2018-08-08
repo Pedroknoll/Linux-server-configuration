@@ -182,7 +182,7 @@ $ sudo apache2ctl restart
 ```    
 $ sudo apt-get install git
 $ sudo apt-get install python-pip
-$ sudo pip install Flask
+$ sudo pip install flask
 $ sudo pip install httplib2 oauth2client sqlalchemy psycopg2-binary sqlalchemy_utils
 $ sudo pip install requests
 ```
@@ -212,7 +212,7 @@ $ sudo pip install requests
       logging.basicConfig(stream=sys.stderr)
       sys.path.insert(0, "/var/www/NoProfitApp/")
 
-      from NoProfitApp import app as application
+      from NoProfitCatalog import app as application
       application.secret_key = 'super_secret_key'
 
 - Run the database setup
@@ -233,12 +233,12 @@ Add to the file the following code:
 	ServerName 18.222.184.111
 	ServerAdmin p.giacometo@gmail.com
 	WSGIScriptAlias / /var/www/NoProfitApp/noProfit.wsgi
-	<Directory /var/www/NoProfitApp/No-Profit-Catalog/>
+	<Directory /var/www/NoProfitApp/NoProfitCatalog/>
 		Order allow,deny
 		Allow from all
 	</Directory>
-	Alias /static /var/www/NoProfitApp/No-Profit-Catalog/static
-	<Directory /var/www/NoProfitApp/No-Profit-Catalog/static/>
+	Alias /static /var/www/NoProfitApp/NoProfitCatalog/static
+	<Directory /var/www/NoProfitApp/NoProfitCatalog/static/>
 		Order allow,deny
 		Allow from all
 	</Directory>
