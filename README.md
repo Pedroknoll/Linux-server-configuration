@@ -75,6 +75,7 @@ Copy the public key saved in your local machine and paste to the
 
     $ sudo apt-get update
     $ sudo apgt-get upgrade
+    $ sudo apt-get dist-upgrade
 
 To allow automatic security updates, install and enable the
 `unattended-upgrades` package, if not installed:
