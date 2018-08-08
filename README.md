@@ -263,7 +263,7 @@ Restart Apache with the following command to apply the changes:
 Create an .htaccess file in the .git directory:
 
 ```
-cd /var/www/catalog/catalog/.git
+cd /var/www/NoProfitApp/NoProfitCatalog/.git
 sudo nano .htaccess
 ```
 
