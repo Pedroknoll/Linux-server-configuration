@@ -182,9 +182,8 @@ $ sudo apache2ctl restart
 ```    
 $ sudo apt-get install git
 $ sudo apt-get install python3-pip
-$ sudo pip3 install flask
-$ sudo pip3 install httplib2 oauth2client sqlalchemy psycopg2-binary sqlalchemy_utils
-$ sudo pip3 install requests
+$ sudo pip3 install flask packaging oauth2client redis passlib flask-httpauth
+$ sudo pip3 install sqlalchemy flask-sqlalchemy psycopg2-binary bleach requests
 ```
 
 ### 5.b Clone the udacity catalog project repository
