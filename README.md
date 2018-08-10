@@ -274,6 +274,11 @@ Order allow,deny
 Deny from all
 ```
 
+##### Add URI to facebook and google API endpoints
+Edit the files `client_secrets.json` and ``fb_client_secrets.json`
+and add the your URI to accept sodial logins. 
+
+
 ### 6. Third-Part
 - [postgres on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
 - [flask deploying](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
