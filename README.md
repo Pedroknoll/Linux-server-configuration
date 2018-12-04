@@ -6,7 +6,7 @@
 ### Server Details
 - IP address: 18.222.184.111.xip.io
 - Accessible SSH port: 2200
-- Application URL: http://18.222.184.111.xip.io
+- Application URL: http://18.222.184.111.xip.io (unavailable - instance removed after project delivery)
 
 ### Pre-requisites
 
